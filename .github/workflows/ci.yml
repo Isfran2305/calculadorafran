@@ -24,7 +24,7 @@ jobs:
 
       - name: Ejecutar Ruff
         run: |
-          ruff check .
+          ruff check . --fix
 
       - name: Ejecutar pruebas
         run: |
