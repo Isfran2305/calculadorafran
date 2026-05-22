@@ -8,6 +8,7 @@ on:
   pull_request:
     branches:
       - main
+      - byron
 
 jobs:
   build:
@@ -33,4 +34,4 @@ jobs:
 
       - name: Ejecutar pruebas
         run: |
-          pytest
+          PYTHONPATH=. pytest
